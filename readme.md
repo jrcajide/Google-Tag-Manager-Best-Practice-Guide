@@ -25,6 +25,12 @@ There are 3 key areas to Google Tag Manager
 
 1. Debug Tags, Rules and Macros
 
+## Visual Overview
+
+![Before](https://d3j5vwomefv46c.cloudfront.net/photos/large/859071575.png)
+
+![After](https://d3j5vwomefv46c.cloudfront.net/photos/large/859071727.png)
+
 ## Breakdown
 
 ### A.1. dataLayer - On Page Load
