@@ -5,8 +5,8 @@ There are 3 key areas to Google Tag Manager
 #### A. Website Code
 
 1. dataLayer - On Page Load
-2. dataLayer.push() - On Events
-3. GTM Container Code
+2. GTM Container Code
+3. dataLayer.push() - On Events
 
 #### B. Google Tag Manager Interface
 
@@ -24,3 +24,62 @@ There are 3 key areas to Google Tag Manager
 #### C. The Debugger (Web Only)
 
 1. Debug Tags, Rules and Macros
+
+## Breakdown
+
+### A.1. dataLayer - On Page Load
+
+The dataLayer is a javascript object that allows you to structure data in an organised and consistent manner across all pages. The dataLayer should be placed in the `<head>` of the page and contains data that is avaialble when the page loads.
+
+eg.
+
+```js
+var dataLayer = {
+    site : { enviroment : 'production',
+             countryCode: 'UK'},
+    page : { type : 'home',
+             url: '/'}
+}
+
+```
+### A.2. GTM Container Code
+
+The Google Tag Mnaager container code is what connects your website to the GTM interface. Anything configured in GTM will be downloaded to the page via this blog of code.
+
+The recommended placement for the container code is just after the opening `<body>`. This is due to the noscript code that is included in the code
+
+**Important:** The GTM container code should always go after the dataLayer code (page load code from A.1.).
+
+### A.3. dataLayer.push() - On Events
+
+dataLayer.push() is used when an event occurs after the page has loaded and this event needs to be tracked. A simple example is when a user adds an item to the basket and is not taken straight to the checkout but instead an AJAX event occurs to update the basket with the new item. 
+
+You should always include the key 'event' with an vaule describing the event.
+
+eg.
+
+```js
+dataLayer.push({
+    event : 'addToBasket',
+    basketProducts : { id : 'NT1234',
+                       name : 'Nike Trainers',
+                       price : 49.99}
+})
+
+```
+
+
+
+
+### B.1. Accounts
+### B.2. Users
+### B.3. Containers
+### B.4. Tags (Inc Auto-Event Tags)
+### B.5. Rules 
+### B.6. Macros
+### B.7. Preview & Debug
+### B.8. Versions
+### B.9. Publish
+### B.10. Roll-back
+
+### C.1. Debug Tags, Rules and Macros
