@@ -75,8 +75,54 @@ dataLayer.push({
 ### B.2. Users
 ### B.3. Containers
 ### B.4. Tags (Inc Auto-Event Tags)
+
+#### Naming Convention
+
+Follow a strict name convention to easily understand the tag provider and what the tag does.
+
+    Tag - [Name Of Tag or Tag Provider] - [Type Of Tag] - [Other Details]
+
+eg.
+
+    Tag - Universal Analytics - Page View
+
 ### B.5. Rules 
+
+#### Naming Convention
+
+Start all rules with lowercase.
+
+Try to base the rule name as close to the actual rules you define
+
+eg.
+
+    event equals addToBasket
+or
+
+    dataLayer - page.type equals Confirmation
+
 ### B.6. Macros
+
+#### Naming Convention
+
+Start all rules with lowercase and the type of macro you are using.
+
+eg.
+
+    dataLayer - [exact key you will be refrencing]
+    dataLayer - page.type
+
+or 
+
+    custom js - [name to describe code]
+    custom js - capture user date of birth
+
+or
+
+    lookup table - [name to describe lookup logic/behaviour]
+    lookup table - google analytics ID based on domain
+
+
 ### B.7. Preview & Debug
 ### B.8. Versions
 ### B.9. Publish
