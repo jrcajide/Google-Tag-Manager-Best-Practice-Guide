@@ -1,4 +1,4 @@
-## Google Tag Manager Best Practise Guide
+## Google Tag Manager Best Practice Guide
 
 There are 3 key areas to Google Tag Manager
 
