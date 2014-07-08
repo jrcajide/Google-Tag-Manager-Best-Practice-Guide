@@ -1,6 +1,12 @@
 ## Google Tag Manager Best Practice Guide
 
-There are 3 key areas to Google Tag Manager
+### Official Google PDFs
+
+[Quick Start Implementation Guide](http://services.google.com/fh/files/misc/gtm_technical_cheat_sheet.pdf)
+
+[Why webmasters and IT love Google Tag Manager](http://static.googleusercontent.com/media/www.google.com/en//tagmanager/pdfs/google-tag-manager-technical-factsheet.pdf)
+
+### The 3 key areas to Google Tag Manager
 
 #### A. Website Code
 
