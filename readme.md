@@ -6,7 +6,7 @@
 
 [Why webmasters and IT love Google Tag Manager](http://static.googleusercontent.com/media/www.google.com/en//tagmanager/pdfs/google-tag-manager-technical-factsheet.pdf)
 
-### The 3 key areas to Google Tag Manager
+### The 4 key areas to Google Tag Manager
 
 #### A. Website Code
 
@@ -30,6 +30,10 @@
 #### C. The Debugger (Web Only)
 
 1. Debug Tags, Rules and Macros
+
+#### D. Tag Request Process
+
+1. Give GTM debugger to Tag requester
 
 ## Visual Overview
 
@@ -216,3 +220,24 @@ If any issues arise from the latest published container you can revert to a prev
 ### C.1. Debug Tags, Rules and Macros
 
 Using the debugger you can check what tags are being executed on the page.
+
+## D. Tag Request Process
+
+### D.1. Give GTM debugger to Tag requester
+
+This can be used to see what data exists in the dataLayer and to provide information on where the tag should go
+
+![GTM Debugger](https://www.evernote.com/shard/s175/sh/8f15b356-ad9a-4806-93ae-f41699630606/e7a8f923134a293cdc3efea63b70a56d/deep/0/Basket.png)
+
+
+So include the link for them to get into debug mode eg. - https://www.googletagmanager.com/set_cookie?id=GTM-523QN9&gtm_auth=1E8PYC5rulKdYq1CDdkCjA&gtm_preview=QUICK_PREVIEW&gtm_debug=x&url=http%3A%2F%2Fonline.brother.co.uk%2F
+
+When the users click on this they can go to the dataLayer tab and confirm the following.
+
+1) What GTM container the tag needs to go in.
+
+2) What URL and page.type the tag should fire on.
+
+3) What data from the data from the dataLayer they need to be passed into the tag for the available variables.
+
+4) Provide the tag code.
