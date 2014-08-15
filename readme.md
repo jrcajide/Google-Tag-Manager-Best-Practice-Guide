@@ -230,7 +230,7 @@ This can be used to see what data exists in the dataLayer and to provide informa
 ![GTM Debugger](https://www.evernote.com/shard/s175/sh/8f15b356-ad9a-4806-93ae-f41699630606/e7a8f923134a293cdc3efea63b70a56d/deep/0/Basket.png)
 
 
-So include the link for them to get into debug mode eg. - https://www.googletagmanager.com/set_cookie?id=GTM-523QN9&gtm_auth=1E8PYC5rulKdYq1CDdkCjA&gtm_preview=QUICK_PREVIEW&gtm_debug=x&url=http%3A%2F%2Fonline.brother.co.uk%2F
+Include the link for user to get into debug mode eg. - https://www.googletagmanager.com/set_cookie?id=GTM-523QN9&gtm_auth=1E8PYC5rulKdYq1CDdkCjA&gtm_preview=QUICK_PREVIEW&gtm_debug=x&url=http%3A%2F%2Fonline.brother.co.uk%2F
 
 When the users click on this they can go to the dataLayer tab and confirm the following.
 
